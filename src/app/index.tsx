@@ -14,6 +14,7 @@ import { GlobalStyle } from 'styles/global-styles';
 
 import { HomePage } from './containers/HomePage/Loadable';
 import { NotFoundPage } from './components/NotFoundPage/Loadable';
+import { VizPage } from './containers/VizPage/Loadable';
 
 export function App() {
   return (
@@ -27,6 +28,7 @@ export function App() {
 
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/viz" component={VizPage} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />
